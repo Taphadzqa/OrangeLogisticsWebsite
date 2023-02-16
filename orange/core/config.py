@@ -1,0 +1,6 @@
+class Config:
+
+    SECRET_KEY = '5791647bb0b13de0c676dfde280ba745'
+    SQLALCHEMY_DATABASE_URI ='mysql://root:@127.0.0.1/orange'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_POOL_RECYCLE = 299

@@ -1,0 +1,92 @@
+{% extends "layouts/page.html" %}
+{% block content %}
+
+<section id="hero_section">
+  
+  <div id="landingPageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#landingPageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#landingPageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#landingPageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1">Orange Logistics</h1>
+          <p class="lead">Expert Solutions for Your Transportation Needs. Streamline Your Supply Chain with Our Reliable Logistics Solutions.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-caption d-none d-md-block">
+          <a href="https://www.olog.co.za/" target="_blank"><img class="olog-logo" src="{{ url_for('static', filename='css/img/logo.svg') }}" alt="OLOG"></a>
+          <p class="lead">A custom built, easy to use digital booking platform designed and operated by Orange Logistics that connects suppliers via leading industry technology to transporters for full end to end supply chain execution.</p>
+        </div>
+      </div>
+      <div class="carousel-item">=
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1">Our promise</h1>
+          <p class="lead">We promise to provide fast, reliable, and cost-effective logistics solutions that meet your unique needs and exceed your expectations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</section>
+
+<section id="services_section" class="mini-section bg-orange">
+  <div class="container pt-5 text-center">
+    <h2>Services</h2>
+    <p class="lead mb-lg-5">Expert Solutions for Your Transportation Needs</p>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="card-title">Transportation Services</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Road Freight transportation throughout the SADAC region. We have a comprehensive carrier base to service a large variety of your freight requirements.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{url_for('main.services')}}" class="btn"><small class="text-muted">More on this</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="card-title">OLOG</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Connecting Goods with approved carriers to facilitate optimization throughout the Supply Chain and REDUCE costs.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.olog.co.za/" class="btn" target="_blank"><small class="text-muted">More on this</small></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card text-center">
+          <div class="card-header">
+            <h3 class="card-title">Orange Petroleum</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Coming soon.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{url_for('main.petroleum')}}" class="btn"><small class="text-muted">Coming soon.</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

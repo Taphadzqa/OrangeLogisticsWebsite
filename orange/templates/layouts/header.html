@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{url_for('main.home')}}">
+      <span class="company_logo bg-light"></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pt-5 pt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{{url_for('main.services')}}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.olog.co.za/" target="_blank">OLOG</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url_for('main.about')}}">Company history</a></li>
+            <li><a class="dropdown-item" href="{{url_for('main.management')}}">Management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('main.contact')}}">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-lg-none" href="https://www.olog.co.za/signin" target="_blank">Sign in</a>
+        </li>
+      </ul>
+      <span class="navbar-text d-none d-lg-block">
+        <a class="btn btn-warning" href="https://www.olog.co.za/signin" target="_blank">Sign in</a>
+      </span>
+    </div>
+  </div>
+</nav>
