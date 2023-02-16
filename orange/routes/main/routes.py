@@ -34,3 +34,8 @@ def management():
 def petroleum():
     return render_template('main/petroleum.html', title='Petroleum')
 
+
+@main.route('/ranzolog')
+def ranzolog():
+    return render_template('main/ranzolog.html', title='Ranzolog')
+

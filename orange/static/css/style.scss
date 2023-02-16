@@ -18,6 +18,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.75rem;
+
+  img {
+    display: block;
+  }
 }
 
 .wrapper {
@@ -107,8 +111,21 @@ section#hero_section {
     background-blend-mode: overlay;
     font-weight: 500;
 
-    img {
-      display: block;
+    #olog_map{
+      position: absolute;
+      width: 65%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: 75rem) {
+      #olog_map{
+        width: 30%;
+      }
+    }
+
+    #olog_logo {
       width: 200px;
       margin: 1rem auto;
     }
@@ -200,6 +217,26 @@ section#management {
 
       &.stacey {
         background-image: url('img/stacy.png');
+      }
+
+      &.haig {
+        background-image: url('img/haig.svg');
+      }
+
+      &.rory {
+        background-image: url('img/rory.svg');
+      }
+
+      &.jayne {
+        background-image: url('img/jayne.svg');
+      }
+
+      &.mark {
+        background-image: url('img/mark.svg');
+      }
+
+      &.olivia {
+        background-image: url('img/olivia.svg');
       }
     }
   }
