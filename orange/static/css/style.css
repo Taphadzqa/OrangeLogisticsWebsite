@@ -96,6 +96,9 @@ section {
 section.mini-section {
   min-height: 75%;
 }
+section.micro-section {
+  min-height: 25%;
+}
 
 section#hero_section {
   min-height: 50%;
@@ -132,7 +135,7 @@ section#hero_section .carousel-item #olog_map {
   }
 }
 section#hero_section .carousel-item #olog_logo {
-  width: 200px;
+  width: 130px;
   margin: 1rem auto;
 }
 section#hero_section .carousel-item:nth-child(1) {
@@ -213,10 +216,10 @@ section#management .card .pic.stacey {
   background-image: url("img/stacy.png");
 }
 section#management .card .pic.haig {
-  background-image: url("img/haig.svg");
+  background-image: url("img/haig.jpg");
 }
 section#management .card .pic.rory {
-  background-image: url("img/rory.svg");
+  background-image: url("img/rory.jpg");
 }
 section#management .card .pic.jayne {
   background-image: url("img/jayne.svg");
@@ -226,6 +229,58 @@ section#management .card .pic.mark {
 }
 section#management .card .pic.olivia {
   background-image: url("img/olivia.svg");
+}
+
+.logo_marquee {
+  list-style: none;
+}
+.logo_marquee li {
+  display: inline-block;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  margin: auto 2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo_marquee li.tiger {
+  background-image: url("img/tigerbrands.png");
+}
+.logo_marquee li.kclark {
+  background-image: url("img/kimberlyclark.png");
+}
+.logo_marquee li.rcl {
+  background-image: url("img/rcl.png");
+}
+.logo_marquee li.kelloggs {
+  background-image: url("img/kelloggs.png");
+}
+.logo_marquee li.heineken {
+  background-image: url("img/heineken.png");
+}
+.logo_marquee li.png {
+  background-image: url("img/png.png");
+}
+.logo_marquee li.distell {
+  background-image: url("img/distell.png");
+}
+.logo_marquee li.halewood {
+  background-image: url("img/halewood.png");
+}
+.logo_marquee li.spar {
+  background-image: url("img/spar.png");
+}
+.logo_marquee li.cochrane {
+  background-image: url("img/cochrane.png");
+}
+.logo_marquee li.universal {
+  background-image: url("img/universal.png");
+}
+.logo_marquee li.woodlands {
+  background-image: url("img/woodlands.png");
+}
+.logo_marquee li.hullets {
+  background-image: url("img/hullets.png");
 }
 
 footer {
