@@ -39,3 +39,8 @@ def petroleum():
 def ranzolog():
     return render_template('main/ranzolog.html', title='Ranzolog')
 
+
+@main.route('/control_tower')
+def control_tower():
+    return render_template('main/control_tower.html', title='Control Tower')
+

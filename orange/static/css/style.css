@@ -195,13 +195,15 @@ section#management .card {
   border-color: transparent;
 }
 section#management .card .pic {
-  width: 100%;
+  width: 75%;
   aspect-ratio: 1/1;
   z-index: 50;
+  margin: auto;
   background-size: cover;
   background-position: top center;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+  background-repeat: no-repeat;
 }
 section#management .card .pic.john {
   background-image: url("img/john.png");
@@ -217,6 +219,7 @@ section#management .card .pic.stacey {
 }
 section#management .card .pic.haig {
   background-image: url("img/haig.jpg");
+  background-size: 75%;
 }
 section#management .card .pic.rory {
   background-image: url("img/rory.jpg");
