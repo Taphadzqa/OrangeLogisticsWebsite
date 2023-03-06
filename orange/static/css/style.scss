@@ -151,16 +151,16 @@ section#hero_section {
     }
     
     &:nth-child(1) {
-      background-image: url('img/truck.png');
+      background-image: url('img/orange_truck.jpg');
       background-position: left;
     }
 
     &:nth-child(2) {
-      background-image: url('img/bg1.jpg');
+      background-image: url('img/sunset.jpg');
     }
 
     &:nth-child(3) {
-      background-image: url('img/warehouse.png');
+      background-image: url('img/warehouse.jpg');
     }
   }
   
@@ -206,8 +206,10 @@ section#contact {
   height: 100%;
   overflow-y: auto;
   background-color: rgb(0, 0, 0, .2);
-  background-image: url('img/map2.png');
+  background-image: url('img/orange_map.jpg');
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section#management {
@@ -243,7 +245,6 @@ section#management {
 
       &.haig {
         background-image: url('img/haig.jpg');
-        background-size: 75%;
       }
 
       &.rory {
@@ -251,14 +252,22 @@ section#management {
       }
 
       &.jayne {
-        background-image: url('img/jayne.svg');
+        background-image: url('img/jayne.jpg');
       }
 
       &.mark {
-        background-image: url('img/mark.svg');
+        background-image: url('img/mark.jpg');
       }
 
       &.olivia {
+        background-image: url('img/olivia.svg');
+      }
+
+      &.bigheadM {
+        background-image: url('img/mark.svg');
+      }
+
+      &.bigheadF {
         background-image: url('img/olivia.svg');
       }
     }

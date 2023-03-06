@@ -139,14 +139,14 @@ section#hero_section .carousel-item #olog_logo {
   margin: 1rem auto;
 }
 section#hero_section .carousel-item:nth-child(1) {
-  background-image: url("img/truck.png");
+  background-image: url("img/orange_truck.jpg");
   background-position: left;
 }
 section#hero_section .carousel-item:nth-child(2) {
-  background-image: url("img/bg1.jpg");
+  background-image: url("img/sunset.jpg");
 }
 section#hero_section .carousel-item:nth-child(3) {
-  background-image: url("img/warehouse.png");
+  background-image: url("img/warehouse.jpg");
 }
 section#hero_section .wave {
   position: absolute;
@@ -186,8 +186,10 @@ section#contact {
   height: 100%;
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("img/map2.png");
+  background-image: url("img/orange_map.jpg");
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section#management .card {
@@ -219,18 +221,23 @@ section#management .card .pic.stacey {
 }
 section#management .card .pic.haig {
   background-image: url("img/haig.jpg");
-  background-size: 75%;
 }
 section#management .card .pic.rory {
   background-image: url("img/rory.jpg");
 }
 section#management .card .pic.jayne {
-  background-image: url("img/jayne.svg");
+  background-image: url("img/jayne.jpg");
 }
 section#management .card .pic.mark {
-  background-image: url("img/mark.svg");
+  background-image: url("img/mark.jpg");
 }
 section#management .card .pic.olivia {
+  background-image: url("img/olivia.svg");
+}
+section#management .card .pic.bigheadM {
+  background-image: url("img/mark.svg");
+}
+section#management .card .pic.bigheadF {
   background-image: url("img/olivia.svg");
 }
 
