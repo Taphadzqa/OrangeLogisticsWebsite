@@ -138,9 +138,16 @@ section#hero_section .carousel-item #olog_logo {
   width: 130px;
   margin: 1rem auto;
 }
+section#hero_section .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2rem;
+}
 section#hero_section .carousel-item:nth-child(1) {
   background-image: url("img/orange_truck.jpg");
   background-position: left;
+}
+section#hero_section .carousel-item:nth-child(1) .carousel-caption {
+  background-color: transparent;
 }
 section#hero_section .carousel-item:nth-child(2) {
   background-image: url("img/sunset.jpg");
@@ -229,10 +236,10 @@ section#management .card .pic.jayne {
   background-image: url("img/jayne.jpg");
 }
 section#management .card .pic.mark {
-  background-image: url("img/mark.jpg");
+  background-image: url("img/mark.png");
 }
 section#management .card .pic.olivia {
-  background-image: url("img/olivia.svg");
+  background-image: url("img/olivia.png");
 }
 section#management .card .pic.bigheadM {
   background-image: url("img/mark.svg");

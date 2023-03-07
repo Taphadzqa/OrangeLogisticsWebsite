@@ -149,10 +149,19 @@ section#hero_section {
       width: 130px;
       margin: 1rem auto;
     }
+
+    .carousel-caption {
+      background-color: rgb(0, 0, 0, .8);
+      border-radius: 2rem;
+    }
     
     &:nth-child(1) {
       background-image: url('img/orange_truck.jpg');
       background-position: left;
+
+      .carousel-caption {
+        background-color: transparent;
+      }
     }
 
     &:nth-child(2) {
@@ -256,11 +265,11 @@ section#management {
       }
 
       &.mark {
-        background-image: url('img/mark.jpg');
+        background-image: url('img/mark.png');
       }
 
       &.olivia {
-        background-image: url('img/olivia.svg');
+        background-image: url('img/olivia.png');
       }
 
       &.bigheadM {
