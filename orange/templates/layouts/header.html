@@ -8,8 +8,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 pt-5 pt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{{url_for('main.services')}}">Services</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{url_for('main.services')}}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url_for('main.services')}}">Transportation services</a></li>
+            <li><a class="dropdown-item" href="https://www.olog.co.za/" target="_blank">OLOG</a></li>
+            <li><a class="dropdown-item" href="{{url_for('main.petroleum')}}">Orange petroleum</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.olog.co.za/" target="_blank">OLOG</a>
@@ -23,7 +30,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{url_for('main.control_tower')}}">Control center</a></li>
-            <li><a class="dropdown-item" href="{{url_for('main.management')}}">Management</a></li>
+            <li><a class="dropdown-item" href="{{url_for('main.management')}}">Meet the team</a></li>
           </ul>
         </li>
         <li class="nav-item">

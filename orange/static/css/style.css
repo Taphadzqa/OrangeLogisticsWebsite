@@ -91,7 +91,7 @@ section {
   position: inherit;
   width: 100%;
   min-height: 100%;
-  background-color: #f1f0f0;
+  background-color: #cfcece;
 }
 section.mini-section {
   min-height: 75%;
@@ -120,13 +120,12 @@ section#hero_section .carousel-item {
   background-position: center;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: overlay;
-  font-weight: 500;
 }
 section#hero_section .carousel-item #olog_map {
   position: absolute;
-  width: 65%;
+  width: 50%;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 75rem) {
@@ -135,19 +134,18 @@ section#hero_section .carousel-item #olog_map {
   }
 }
 section#hero_section .carousel-item #olog_logo {
-  width: 130px;
-  margin: 1rem auto;
+  width: 6rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 section#hero_section .carousel-item .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 2rem;
 }
 section#hero_section .carousel-item:nth-child(1) {
   background-image: url("img/orange_truck.jpg");
   background-position: left;
-}
-section#hero_section .carousel-item:nth-child(1) .carousel-caption {
-  background-color: transparent;
 }
 section#hero_section .carousel-item:nth-child(2) {
   background-image: url("img/sunset.jpg");
@@ -189,13 +187,6 @@ section#hero_section .wave .shape-fill {
   }
 }
 
-section#contact {
-  background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("img/orange_map.jpg");
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 section#contact textarea {
   min-height: 7rem;
 }
