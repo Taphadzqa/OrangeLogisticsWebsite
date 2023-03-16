@@ -13,6 +13,15 @@
   background-color: #ffa500;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+a:hover {
+  color: #ffa500;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.75rem;
