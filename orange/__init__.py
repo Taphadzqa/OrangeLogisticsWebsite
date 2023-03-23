@@ -1,10 +1,6 @@
 from flask import Flask
 from logging import FileHandler, WARNING  # Error logging
 from orange.core.config import Config
-from tinydb import TinyDB, Query
-
-
-db = TinyDB('orange/core/db.json')
 
 
 def create_app(config_class=Config):

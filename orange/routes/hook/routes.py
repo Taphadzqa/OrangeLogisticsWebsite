@@ -1,6 +1,5 @@
-from flask import Blueprint
+from flask import Blueprint, current_app
 from flask_httpauth import HTTPBasicAuth
-from orange import db
 import string
 import random
 
@@ -9,12 +8,9 @@ webhook = Blueprint('webhook', __name__)
 auth = HTTPBasicAuth()
 
 
-users = (db.all())[0]
-
-
 @auth.verify_password
 def verify(username, password):
-    if username in users and password == users.get(username):
+    if username in current_app.config['AUTHENTICATION'] and password == current_app.config['AUTHENTICATION'].get(username):
         return username
 
 
