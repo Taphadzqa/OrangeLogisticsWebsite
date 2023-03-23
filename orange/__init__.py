@@ -1,6 +1,10 @@
 from flask import Flask
-from logging import FileHandler, WARNING #Error logging
+from logging import FileHandler, WARNING  # Error logging
 from orange.core.config import Config
+from tinydb import TinyDB, Query
+
+
+db = TinyDB('orange/core/db.json')
 
 
 def create_app(config_class=Config):
@@ -11,10 +15,12 @@ def create_app(config_class=Config):
         error_file_handler = FileHandler(app.root_path + '/core/errorLog.txt')
         error_file_handler.setLevel(WARNING)
         app.logger.addHandler(error_file_handler)
-   
+
     from orange.routes.errors.handlers import errors
     from orange.routes.main.routes import main
+    from orange.routes.hook.routes import webhook
     app.register_blueprint(errors)
     app.register_blueprint(main)
+    app.register_blueprint(webhook)
 
     return app
