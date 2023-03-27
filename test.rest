@@ -1,2 +1,0 @@
-POST https://www.orangelogistics.co.za/webhook/J2ldMcfuano42sNv1ABVY_g6vol9fQ
-Authorization: Basic Rory:Shadow465
