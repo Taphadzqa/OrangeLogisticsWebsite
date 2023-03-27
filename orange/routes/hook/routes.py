@@ -15,7 +15,7 @@ def verify(username, password):
 
 
 @auth.login_required
-def generateOTP(size=6, characters=string.ascii_lowercase + string.digits):
+def generateOTP(size=4, characters=string.ascii_lowercase + string.digits):
     return ''.join(random.choice(characters) for _ in range(size))
 
 
